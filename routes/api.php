@@ -21,7 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // Tempat untuk menyimpan API
-Route::post('/posts/store', [HotelController::class, "store"]);
 Route::get('/show/hotel', [HotelController::class, "showHotel"]);
 Route::get('/show/hotel/detail/{id}', [HotelController::class, "showById"]);
 Route::post('/create/hotel', [HotelController::class, "tambah_hotel"]);

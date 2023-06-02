@@ -61,6 +61,7 @@ class HotelController extends Controller
                 'rating' => $request->input('rating'),
                 'fasilitas' => $request->input('fasilitas'),
                 'daerah' => $request->input('daerah'),
+                'harga' => $request->input('harga'),
             ]);
 
             if ($hotel) {

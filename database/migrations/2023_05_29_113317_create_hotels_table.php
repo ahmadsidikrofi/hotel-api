@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('fasilitas')->nullable();
             $table->string('daerah');
             $table->timestamps();
+            $table->float('harga');
         });
     }
 

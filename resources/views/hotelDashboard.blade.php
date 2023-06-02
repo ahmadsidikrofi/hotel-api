@@ -53,7 +53,7 @@
                               <h5 class="card-title fw-bolder mx-3 mb-3 mt-3 text-danger">{{ $hotel->title }}</h5>
                               <p class="card-text mx-3 fw-medium">{{ $hotel->daerah }}</p>
                               <p class="card-text"><small class="text-body-secondary mx-3">{{ $hotel->fasilitas }}</small></p>
-                              <p class="card-text fw-bold mx-3">Rp 180.205 <br>
+                              <p class="card-text fw-bold mx-3">Rp {{number_format ($hotel->harga,3)}} <br>
                                 <small class="text-body-secondary fw-normal">Tax included</small>
                               </p>
                             </div>

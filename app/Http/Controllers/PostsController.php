@@ -11,7 +11,7 @@ class PostsController extends Controller
     public function show_hotel(Request $request)
     {
         $searchValue = $request->input('search');
-        $hotels = Hotel::where('nama_hotel', 'like', '%' . $searchValue . '%')
+        $hotels = Hotel::where('title', 'like', '%' . $searchValue . '%')
         ->orWhere('daerah', 'like', '%' . $searchValue . '%')
         ->orWhere('fasilitas', 'like', '%' . $searchValue . '%')
         ->get();
