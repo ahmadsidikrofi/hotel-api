@@ -19,8 +19,8 @@ use App\Http\Controllers\PostsController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-// pada api.php
-// adalah tempat untuk menyimpan route api
+
+// Tempat untuk menyimpan API
 Route::post('/posts/store', [HotelController::class, "store"]);
 Route::get('/show/hotel', [HotelController::class, "showHotel"]);
 Route::get('/show/hotel/detail/{id}', [HotelController::class, "showById"]);
